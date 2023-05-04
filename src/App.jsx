@@ -1,7 +1,7 @@
 import phrases from './assets/phrases.json';
 import { getRandomNumber } from './utils/getRandom';
-import Phrase from './components/phrase/phrase';
-import Button from './components/button/button';
+import Phrase from './components/phrase/Phrase';
+import Button from './components/button/Button';
 import { useState } from 'react';
 
 import space_1 from './assets/space_1.jpg';
@@ -18,7 +18,7 @@ function App() {
   const getRandomPhrase = () => phrases[getRandomNumber(phrases.length - 1)];
   const getRandomImg = () => brackgroundImg[getRandomNumber(brackgroundImg.length - 1)];
 
-  
+
   const [background,setBackground]= useState(getRandomImg());
   const [phraseObject, setPhraseObjectt] = useState(getRandomPhrase());
   const changePhrase = () => {
