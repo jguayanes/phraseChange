@@ -1,0 +1,32 @@
+
+.phrase__container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button__container{
+  display: flex;
+  justify-content: center;
+}
+
+.phrase__container h1 {
+  font-family: 'Digital Numbers', sans-serif;
+}
+.autor{
+  font-size: 18px;
+  font-family: 'Digital Numbers', sans-serif;
+}
+
+
+@media screen and (min-width:735px){
+  .button__container{
+    font-size: 80px;
+  }
+    
+}
